@@ -1,0 +1,439 @@
+
+body{
+    max-width: 100%;
+    margin: 2em;
+}
+
+.hero-img{
+    position: absolute;
+    background: url('../images/desktop/image-header.jpg');
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    z-index: -1;
+}
+nav{
+   position: fixed;
+   right: 0;
+   top: 0;
+   background: #fff; 
+   width: 50%;
+   height: 40vh;
+   z-index: 999;
+   transform: translateX(100%);
+
+
+   ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2em;
+    
+
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: rgb(135, 132, 132);
+        padding: .75em 2em;
+        display: block;
+
+        &:hover{
+            color: black;
+            background: yellow;
+
+            border-radius: 5em;
+        }
+
+    }
+   }
+
+   .close{
+    float: right;
+    width: 2.4em;
+    margin: 1em;
+   }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    svg{
+        cursor: pointer;
+        fill:#fff;
+
+    }
+}
+.hero{
+text-align: center;
+position: relative;
+bottom: 4em;
+
+h1{
+    
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.arrow{
+    position: relative;
+    top: 1em;
+}
+}
+.more-info{
+    position: relative;
+    top: 12.12em;
+    right: 2em;
+    width: 100%;
+
+    img{
+        width: 115%;
+        
+    }
+    .title{
+        text-align: center;
+        font-size: 3em;
+        padding-left: 2em;
+    }
+
+    .testmony{
+        text-align: center;
+        font-size: 1.3em;
+        padding-left: 3em;
+        line-height: 1.7em;
+        padding-bottom: 2em;
+    }
+
+    h5{
+        position: relative;
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 3em;
+        bottom: 2em;
+        
+    }
+}
+
+.one{
+    position: relative;
+    margin-top: 15em;
+    background: url('../images/desktop/image-graphic-design.jpg');
+    width: 115%;
+    height: 90vh;
+    right: 2em;
+    background-size: cover;
+    background-position-x: 30%;
+    background-position-y: 30%;
+    z-index: -1;
+
+    
+    .graphic{
+        position: absolute;
+        bottom: 5em;
+        text-align: center;
+
+    }
+    h1{
+        font-size: 2.5em;
+        
+    }
+    .graphic-sub{
+        line-height: 1.5em;
+        font-size: 1.3em;
+        margin-left: 2em;
+    }
+}
+img{
+    width: 100%;
+}
+
+.two{
+    position: relative;
+    bottom: 2em;
+    background: url('../images/desktop/image-photography.jpg');
+    width: 115%;
+    height: 90vh;
+    right: 2em;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 30%;
+    z-index: -1;
+
+    .photography{
+        position: absolute;
+        bottom: 5em;
+        text-align: center;
+
+    }
+
+    .photography-sub{
+        line-height: 1.8em;
+        font-size: 1.4em;
+        margin-left: 2em;
+    
+    }
+}
+.client{
+    h5{
+        text-align: center;
+        font-size: 1em;
+        letter-spacing: .4em;
+        text-transform: uppercase;
+    }
+
+    li{
+        text-align: center;
+        padding: 3em 1em;
+        list-style-type: none;
+        img{
+            width: 5em;
+            height: 5em;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+    }
+}
+.images{
+    position: relative;
+    right: 2em;
+    img{
+        width: 57%;
+    }
+}
+.two-image{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.last-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background:hsl(168, 34%, 41%);
+    position: relative;
+    width: 115%;
+    right:2em;
+    height: 50vh;
+
+
+    .logo{
+        fill:hsl(168, 97%, 12%);
+        fill-rule:nonzero;
+        position: relative;
+        margin: 3em 13em;
+        width:50%;
+
+        
+     }
+
+     ul{
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 60%;
+        margin-left: 3em;
+        
+
+
+        a{
+            color: hsl(168, 97%, 12%);
+            text-decoration: none;
+            position: relative;
+            top: 3em;
+        }
+     }
+
+     .icon{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-left: 7em;
+        position: relative;
+        top: 9em;
+     }
+
+
+}
+
+.open-nav{
+    transform: translateX(0);
+}
+
+
+@media only screen and (min-width: 680px){
+    body{
+        margin: 2em;
+    }
+
+} 
+@media only screen and (min-width: 920px){
+    .menu{
+        display: none;
+    }
+
+    nav{
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+        
+
+        svg.close{
+            display: none;
+        }
+
+        ul{
+            display: flex;
+            margin: 0;
+
+           a{
+            color: #fff;
+            padding: .5em 1.5em;
+            font-size: 1em;
+
+            &:hover{
+                background: #fff;
+            }
+           }
+        }
+    }
+
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        
+
+        img{
+            width: 100% ;
+        }
+    }
+
+    .feature.left{
+        grid-template-areas: "left right";
+
+
+        img{
+            grid-area: right;
+        }
+
+        .title{
+            text-align: center;
+        }
+
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .more-info{
+        .title.new{
+            font-size: 2em;
+            text-align: start;
+            position: relative;
+            bottom: 2em;
+            }
+
+
+
+        .title{
+            margin-top: 4em;
+        }
+
+        .content{
+            position: relative;
+            bottom: 5em;
+        }
+        img{
+            width: 36.6em;
+        }
+        .testmony.sub{
+            position: relative;
+            bottom: 4em;
+            font-size: 1em;
+            text-align: start;
+            
+        }
+    }
+
+    .maybe{
+        display: flex;
+        
+
+        .one{
+            position: relative;
+            bottom: 9.5em;
+            padding-left: 4em;
+            
+        }
+
+        .two{
+            position: relative;
+            right: 2em;
+            top: 5.4em;
+            
+            
+        }
+
+        .graphic-sub{
+            padding-right: 3em;
+        }
+    }
+
+
+    .cup{
+    position: relative;
+    bottom: 6.7em;
+    right: 10em;
+    
+    padding-left: 10em;
+    }
+    .egg{
+        position: relative;
+        top: 2.9em;
+        left: 4em;
+    }
+
+    .client{
+        ul{
+        display: flex;
+        
+        blockquote{
+            text-align: center;
+            font-size: .80em;
+            line-height: 1.5em;
+        }
+        }
+    }
+
+    .images{
+        display: flex;
+    }
+
+    
+} 
+
+@media only screen and (min-width: 1200px){
+    .wrapp{
+        width: 1200px;
+        margin:  0  auto;
+
+
+    }
+    .feature{
+        margin: 0 auto;
+    }
+
+
+
+}
